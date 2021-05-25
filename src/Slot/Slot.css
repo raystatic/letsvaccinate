@@ -1,0 +1,46 @@
+.slot{
+    width: 60%;
+    margin-top: 30px;
+    background-color:transparent;
+    height: auto;
+    display: flex;
+    align-self: center;
+    border: 1px solid orange;
+    border-radius: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.slot__name{
+    font-family: Rubik;
+    margin-top: 16px;
+}
+
+.slot__address{
+    font-family: Rubik;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.slot__title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.slot__free{
+    font-family: Rubik;
+    border-top-right-radius: 16px;
+    padding: 16px;
+    background-color: orange;
+    margin-left: 2px;
+}
+
+.slot__time{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: space-around
+}

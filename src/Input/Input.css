@@ -1,0 +1,98 @@
+.input{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input__main{
+    width: 80%;
+    height: auto;
+    border: 1px solid orange;
+    padding: 30px;
+    border-right: transparent;
+    font-size: 20px;
+    font-family: Rubik;
+    background: transparent;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    outline: none;
+}
+
+.input__search{
+    transform: scale(2.5);
+    align-self: center;
+    color: white;
+}
+
+.input__search__wrapper{
+    padding: 16px;
+    height: auto;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    border: 1px solid orange;
+    border-left-color: transparent;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: orange;
+}
+
+.input__search__wrapper :hover{
+    cursor: pointer;
+} 
+
+.input__wrapper{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.slots{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input__pincode{
+    border: 1px solid orange;
+    padding: 16px;
+    border-radius: 16px;
+    font-family: Rubik;
+    font-size: 16px;
+    outline: none;
+    color: black;
+}
+
+.input__date{
+    color: orange;
+    border: orange;
+}
+
+.input__date__wrapper{
+   margin-left: 20px;
+   padding: 8px;
+   border-radius: 16px;
+}
+
+.input__submit{
+    align-self: center;
+    background-color: orange;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 16px;
+    margin-top: 16px; 
+    font-family: Rubik;
+    font-size: 16px;
+    color: white;  
+}
+
+.input__submit:hover{
+    cursor: pointer;
+}
+

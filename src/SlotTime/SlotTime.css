@@ -1,0 +1,16 @@
+.slottime{
+    width: auto;
+    display: flex;
+    margin-right: 10px;
+    margin-top: 5px;
+    justify-content: center;
+}
+.slottime__time{
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    font-family: Rubik;
+    font-size: 16px;
+    border-radius: 5px;
+}

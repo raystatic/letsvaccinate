@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+}
+
+.header__title{
+    color: black;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: Rubik;
+}
+
