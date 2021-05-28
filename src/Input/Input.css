@@ -57,6 +57,28 @@
     justify-content: center;
 }
 
+.slot__no__data{
+    align-self: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    font-family: Rubik;
+    border: 1px solid orange;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.slot__no__error{
+    align-self: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: orangered;
+    font-family: Rubik;
+    border: 1px solid orange;
+    padding: 30px;
+    border-radius: 16px;
+}
+
 .input__pincode{
     border: 1px solid orange;
     padding: 16px;

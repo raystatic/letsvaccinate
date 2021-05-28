@@ -44,3 +44,19 @@
     flex-direction: column;
     justify-content: space-around
 }
+
+.slot__book{
+    margin-top: 10px;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border-radius: 16px;
+    font-family: Rubik;
+    font-size: 16px;
+    width: 200;
+    align-self: flex-start;
+}
+
+.slot__book:hover{
+    cursor: pointer;
+}

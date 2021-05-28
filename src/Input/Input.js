@@ -12,10 +12,14 @@ function Input() {
     const [date, setDate] = useState("")
     const [slotsByPinCode, setSlotsByPinCode] = useState([]);
     const [showData, setShowData] = useState(false);
+    const [showNoDataFound, setShowNoDataFound] = useState(false);
+    const [error, setError] = useState(false);
+    const [errorData, setErrorData] = useState("");
 
     useEffect(() => {
         setSlotsByPinCode([]);
         setShowData(false)
+        setShowNoDataFound(false)
     },[])
 
     const selectedDate = (date) => {
@@ -30,11 +34,21 @@ function Input() {
            axios.get(`appointment/sessions/public/findByPin?pincode=${pinCode}&date=${date}`)
                 .then((response) => {
                     console.log(response.data.sessions);
-                    setShowData(true);
+                    if(response.data.sessions.length > 0){
+                        setShowData(true);
+                        setShowNoDataFound(false);
+                    }else{
+                        setShowData(false);
+                        setShowNoDataFound(true);
+                    }
+                    setError(false);
                     setSlotsByPinCode(response.data.sessions);
                 })
                 .catch((err) => {
-                    setShowData(false)
+                    setShowData(false);
+                    setShowNoDataFound(false);
+                    setError(true);
+                    setErrorData(`Something went wrong! Please try again`)
                     console.log(`Error: ${err}`);
                 })
         }
@@ -106,10 +120,21 @@ function Input() {
                      age = {slot.min_age_limit}
                      vaccine={slot.vaccine}
                      slots={slot.slots}
+                     dose_1 = {slot.available_capacity_dose1}
+                     dose_2 = {slot.available_capacity_dose1}
                     />
-                    console.log(slot.name)
                 })
               }
+           </div>
+           <div className="slots">
+           {
+                showNoDataFound && <p className="slot__no__data">No Data found</p>
+            }
+           </div>
+           <div className="slots">
+           {
+                error && <p className="slot__no__error">{errorData}</p>
+            }
            </div>
         </div>
     )

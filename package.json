@@ -1,6 +1,5 @@
 {
   "name": "findslot",
-  "homepage": "https://raystatic.github.io/findslot",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

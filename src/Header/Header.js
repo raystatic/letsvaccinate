@@ -5,7 +5,7 @@ function Header() {
     return (
         <div className="header">
             <div className="header__title">
-               Find Your slot here...
+               Let's vaccinate..
             </div>
         </div>
     )
